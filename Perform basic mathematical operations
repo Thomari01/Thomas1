@@ -1,0 +1,7 @@
+length = 10  # 
+width = 5    # 
+
+area = length * width
+
+print(f"The rectangle has a length of {length} and a width of {width}.")
+print(f"The area of the rectangle is {area}.")
