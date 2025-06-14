@@ -1,0 +1,5 @@
+conversion_factor = 2.20462
+kilograms = [5, 10, 20, 50]
+pounds = [kg * conversion_factor for kg in kilograms]
+for kg, lb in zip(kilograms, pounds):
+     print(f"{kg} kilograms is equal to {lb:.2f} pounds.")
