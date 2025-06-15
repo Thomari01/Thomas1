@@ -1,0 +1,11 @@
+tank_size = 15
+# Define the total distance covered
+distance = 600
+# Calculate miles per gallon
+mpg = distance / tank_size
+# Print the result
+print("Miles per gallon:", mpg)
+tank_size = 15
+distance = 600
+mpg = distance / tank_size
+print("Miles per gallon:", mpg)
