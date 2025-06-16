@@ -1,0 +1,27 @@
+# 99 Bottles of Beer on the Wall - Python Program
+
+# Start with 99 bottles
+bottles = 99
+
+# Loop from 99 down to 0
+while bottles > 0:
+    # Decide whether to use 'bottle' or 'bottles'
+    if bottles == 1:
+        print(f"{bottles} bottle of beer on the wall, {bottles} bottle of beer.")
+    else:
+        print(f"{bottles} bottles of beer on the wall, {bottles} bottles of beer.")
+    
+    # Take one down and pass it around
+    bottles -= 1
+
+    # Check how many bottles are left and update the phrase accordingly
+    if bottles == 1:
+        print(f"Take one down and pass it around, {bottles} bottle of beer on the wall.\n")
+    elif bottles == 0:
+        print(f"Take one down and pass it around, no more bottles of beer on the wall.\n")
+    else:
+        print(f"Take one down and pass it around, {bottles} bottles of beer on the wall.\n")
+
+# Final verse when there are no more bottles
+print("No more bottles of beer on the wall, no more bottles of beer.")
+print("Go to the store and buy some more, 99 bottles of beer on the wall.")
