@@ -1,0 +1,30 @@
+# Prompt the user for two distinct integers
+num1 = int(input("Enter the first integer: "))
+num2 = int(input("Enter the second integer: "))
+
+print("\nLogical Comparisons using 'and' operator:")
+# Example 1: Both numbers greater than 0
+result1 = (num1 > 0) and (num2 > 0)
+print(f"Both numbers are positive: ({num1} > 0) and ({num2} > 0) --> {result1}")
+
+# Example 2: Both numbers less than 100
+result2 = (num1 < 100) and (num2 < 100)
+print(f"Both numbers are less than 100: ({num1} < 100) and ({num2} < 100) --> {result2}")
+
+print("\nLogical Comparisons using 'or' operator:")
+# Example 3: At least one number is even
+result3 = (num1 % 2 == 0) or (num2 % 2 == 0)
+print(f"At least one number is even: ({num1} % 2 == 0) or ({num2} % 2 == 0) --> {result3}")
+
+# Example 4: At least one number is greater than 50
+result4 = (num1 > 50) or (num2 > 50)
+print(f"At least one number is greater than 50: ({num1} > 50) or ({num2} > 50) --> {result4}")
+
+print("\nLogical Comparisons using 'not' operator:")
+# Example 5: The first number is not less than 10
+result5 = not (num1 < 10)
+print(f"The first number is not less than 10: not ({num1} < 10) --> {result5}")
+
+# Example 6: The second number is not equal to 0
+result6 = not (num2 == 0)
+print(f"The second number is not zero: not ({num2} == 0) --> {result6}")
