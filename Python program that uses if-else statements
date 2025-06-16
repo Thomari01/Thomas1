@@ -1,0 +1,36 @@
+# Age Eligibility Program 
+# Function to get a valid, non-negative integer for age
+def get_valid_age():
+    while True:  # Keep asking until valid input is provided
+        age_input = input("How old are you? ")
+        if age_input.isdigit():  # Ensure the input is a positive whole number
+            return int(age_input)
+        else:
+            print("Please enter a valid, non-negative whole number.")
+
+# Get validated age from the user
+age = get_valid_age()
+
+# Check and display if the user is old enough to drive
+if age >= 16:
+    print("You are old enough to drive.")
+else:
+    print("You are not old enough to drive.")
+
+# Check and display if the user is old enough to vote
+if age >= 18:
+    print("You can vote.")
+else:
+    print("You cannot vote.")
+
+# Check and display if the user can legally buy alcohol
+if age >= 21:
+    print("You can buy alcohol legally.")
+else:
+    print("You cannot buy alcohol legally.")
+
+# Check and display if the user is eligible for a senior discount
+if age >= 65:
+    print("You are eligible for the senior discount.")
+else:
+    print("You are not eligible for the senior discount.")
