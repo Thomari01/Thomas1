@@ -1,0 +1,22 @@
+def factorial(n):
+    """
+    Recursive function to calculate the factorial of a number.
+    n: int - The number to calculate the factorial of.
+    return: int - The factorial result.
+    """
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+def main():
+    """
+    Main function to drive the program.
+    """
+    number = int(input("Enter a non-negative integer: "))
+    if number < 0:
+        print("Factorial is not defined for negative numbers.")
+    else:
+        result = factorial(number)
+        print(f"The factorial of {number} is: {result}")
+main()
+
