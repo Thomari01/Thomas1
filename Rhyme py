@@ -1,0 +1,26 @@
+def custom_song(character, action, wall_type, injury, helper1, helper2, fix_attempt, ending):
+    print("\n\n")
+    print(f"{character} {action} on a {wall_type} wall,")
+    print(f"{character} {action} from the {wall_type} wall,")
+    print(f"All the {helper1}'s and all the {helper2}'s men")
+    print(f"Couldn't {fix_attempt} {character} {ending} again.")
+
+input_character = input("Enter a character ")
+input_action = input("Enter an action ")
+input_wall_type = input("Enter a type of wall ")
+input_injury = input("Enter an injury or accident ")
+input_helper1 = input("Enter a helper group ")
+input_helper2 = input("Enter another helper group ")
+input_fix_attempt = input("Enter a verb for fixing ")
+input_ending = input("Enter an ending ")
+
+custom_song(
+    character=input_character,
+    action=input_action,
+    wall_type=input_wall_type,
+    injury=input_injury,
+    helper1=input_helper1,
+    helper2=input_helper2,
+    fix_attempt=input_fix_attempt,
+    ending=input_ending
+)
