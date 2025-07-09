@@ -1,0 +1,35 @@
+import random
+
+def main():
+    """
+    A simple Magic 8-Ball simulator that gives random answers to user questions.
+    """
+    responses = [
+        "It is certain.",
+        "Without a doubt.",
+        "You may rely on it.",
+        "Yes, definitely.",
+        "It is decidedly so.",
+        "As I see it, yes.",
+        "Most likely.",
+        "Outlook good.",
+        "Yes.",
+        "Signs point to yes.",
+        "Reply hazy, try again.",
+        "Ask again later.",
+        "Better not tell you now.",
+        "Cannot predict now.",
+        "Concentrate and ask again.",
+        "Don't count on it.",
+        "My reply is no.",
+        "My sources say no.",
+        "Outlook not so good.",
+        "Very doubtful."
+    ]
+    keep_asking = "yes"
+    while keep_asking.lower() == "yes":
+        question = input("Ask the Magic 8-Ball a question: ")
+        print("Magic 8-Ball says:", random.choice(responses))
+        keep_asking = input("\nDo you want to ask another question? (yes/no): ")
+    print("Goodbye!")
+main()
